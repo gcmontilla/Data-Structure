@@ -1,0 +1,3 @@
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/cmake-build-debug/CMakeFiles/airport.dir

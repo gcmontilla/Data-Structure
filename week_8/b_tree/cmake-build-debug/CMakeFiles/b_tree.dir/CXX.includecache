@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/classes/cs_008/week_8/b_tree/b_tree.h
+vector
+-
+iostream
+-
+iomanip
+-
+utility.h
+/Users/greg/Dropbox/classes/cs_008/week_8/b_tree/utility.h
+
+/Users/greg/Dropbox/classes/cs_008/week_8/b_tree/main.cpp
+iostream
+-
+b_tree.h
+/Users/greg/Dropbox/classes/cs_008/week_8/b_tree/b_tree.h
+cmath
+-
+
+/Users/greg/Dropbox/classes/cs_008/week_8/b_tree/utility.h
+iostream
+-
+

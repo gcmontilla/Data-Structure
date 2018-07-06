@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/ChainedHashTable.h
+iostream
+-
+iomanip
+-
+list
+-
+record.h
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/record.h
+
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/DoubleHashTable.h
+record.h
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/record.h
+
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/HashTable.h
+iomanip
+-
+record.h
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/record.h
+
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/main.cpp
+iostream
+-
+HashTable.h
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/HashTable.h
+DoubleHashTable.h
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/DoubleHashTable.h
+ChainedHashTable.h
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/ChainedHashTable.h
+
+/Users/greg/Dropbox/classes/cs_008/week_11/hash/record.h
+iostream
+-
+

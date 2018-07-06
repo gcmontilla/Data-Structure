@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/Queue.h
+
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/airport.cpp
+airport.h
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/airport.h
+cassert
+-
+Queue.h
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/Queue.h
+iostream
+-
+
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/airport.h
+
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/main.cpp
+iostream
+-
+airport.cpp
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/airport.cpp
+Queue.h
+/Users/greg/Dropbox/classes/cs_008/week_1/airport/Queue.h
+

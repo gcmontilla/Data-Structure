@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/b_tree.h
+vector
+-
+iostream
+-
+iomanip
+-
+utility.h
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/utility.h
+
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/main.cpp
+iostream
+-
+map.h
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/map.h
+b_tree.h
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/b_tree.h
+
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/map.h
+pair.h
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/pair.h
+b_tree.h
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/b_tree.h
+
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/pair.h
+iostream
+-
+string
+-
+
+/Users/greg/Dropbox/Classes/CS 8/week_10/map/utility.h
+iostream
+-
+

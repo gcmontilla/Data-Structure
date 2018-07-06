@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/classes/cs_008/week_6/avl/AVL.h
+tree_node.h
+/Users/greg/Dropbox/classes/cs_008/week_6/avl/tree_node.h
+
+/Users/greg/Dropbox/classes/cs_008/week_6/avl/main.cpp
+iostream
+-
+AVL.h
+/Users/greg/Dropbox/classes/cs_008/week_6/avl/AVL.h
+
+/Users/greg/Dropbox/classes/cs_008/week_6/avl/tree_node.h
+clocale
+-
+iostream
+-
+iomanip
+-
+

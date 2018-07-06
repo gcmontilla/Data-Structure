@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/classes/cs_008/week_7/heap/heap.h
+iostream
+-
+vector
+-
+iomanip
+-
+
+/Users/greg/Dropbox/classes/cs_008/week_7/heap/info.h
+iostream
+-
+
+/Users/greg/Dropbox/classes/cs_008/week_7/heap/main.cpp
+iostream
+-
+heap.h
+/Users/greg/Dropbox/classes/cs_008/week_7/heap/heap.h
+pqueue.h
+/Users/greg/Dropbox/classes/cs_008/week_7/heap/pqueue.h
+
+/Users/greg/Dropbox/classes/cs_008/week_7/heap/pqueue.h
+heap.h
+/Users/greg/Dropbox/classes/cs_008/week_7/heap/heap.h
+info.h
+/Users/greg/Dropbox/classes/cs_008/week_7/heap/info.h
+

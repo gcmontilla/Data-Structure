@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists_arrays/Queue.h
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists_arrays/Stack.h
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists_arrays/main.cpp
+iostream
+-
+Stack.h
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists_arrays/Stack.h
+Queue.h
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists_arrays/Queue.h
+

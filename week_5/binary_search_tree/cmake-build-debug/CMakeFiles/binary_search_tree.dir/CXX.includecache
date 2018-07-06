@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/classes/cs_008/week_5/binary_search_tree/BST.h
+tree_node.h
+/Users/greg/Dropbox/classes/cs_008/week_5/binary_search_tree/tree_node.h
+
+/Users/greg/Dropbox/classes/cs_008/week_5/binary_search_tree/main.cpp
+iostream
+-
+BST.h
+/Users/greg/Dropbox/classes/cs_008/week_5/binary_search_tree/BST.h
+tree_node.h
+/Users/greg/Dropbox/classes/cs_008/week_5/binary_search_tree/tree_node.h
+
+/Users/greg/Dropbox/classes/cs_008/week_5/binary_search_tree/tree_node.h
+clocale
+-
+iostream
+-
+iomanip
+-
+

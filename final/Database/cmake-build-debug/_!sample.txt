@@ -1,0 +1,33 @@
+select * from student
+//****************************************************************************
+//		SIMPLE SELECT
+//****************************************************************************
+
+select * from student
+
+//------- simple strings -------------------
+select * from student where lname = Jackson
+
+//----- quoted strings ---------------------
+select * from student where lname = "Del Rio"
+
+//-------- non-existing string ------------------
+select * from student where lname = "Does Not Exist"
+
+//****************************************************************************
+//		RELATIONAL OPERATORS:
+//****************************************************************************
+
+//.................
+//:Greater Than   :
+//.................
+select * from student where lname > Yang
+
+//. . . . . . . . . . . . . (Greater Than: Non-existing) . . . . . . . . . . . . . . . . . . . . .
+select * from student where age > 50
+
+//. . . . . . . . . . . . . (Greater than: last item) . . . . . . . . . . . . . . . . . .
+select * from student where age  > 53
+
+//. . . . . . . . . . . . . (Greater Than: Passed last item) . . . . . . . . . . . . . . . . . . . . .
+select * from student where age > 54

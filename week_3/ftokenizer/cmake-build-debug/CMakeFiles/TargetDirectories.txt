@@ -1,0 +1,3 @@
+/Users/greg/Dropbox/classes/cs_008/week_3/ftokenizer/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/greg/Dropbox/classes/cs_008/week_3/ftokenizer/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/greg/Dropbox/classes/cs_008/week_3/ftokenizer/cmake-build-debug/CMakeFiles/ftokenizer.dir

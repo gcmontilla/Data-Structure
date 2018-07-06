@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/Headers/list.h
+iostream
+-
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/Headers/queue.h
+iostream
+-
+list.h
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/Headers/list.h
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/Headers/stack.h
+iostream
+-
+list.h
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/Headers/list.h
+stack.h
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/Headers/stack.h
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/main.cpp
+iostream
+-
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/queue.cpp
+Headers/queue.h
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/Headers/queue.h
+
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/stack.cpp
+Headers/stack.h
+/Users/greg/Dropbox/classes/cs_008/week_1/linked_lists/Headers/stack.h
+

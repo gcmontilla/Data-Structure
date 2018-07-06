@@ -1,0 +1,4 @@
+"/Users/greg/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/181.4668.70/CLion.app/Contents/bin/cmake/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/greg/Dropbox/classes/cs_008/week_11/hash
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/greg/Dropbox/classes/cs_008/week_11/hash/cmake-build-debug
