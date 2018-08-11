@@ -37,7 +37,7 @@ public:
             case 0:
                 return "DIGIT";
             case 1:
-                return "ALPHA";
+                return "WORD";
             case 2:
                 return "SPACE";
             case 3:

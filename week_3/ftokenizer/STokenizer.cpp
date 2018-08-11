@@ -26,7 +26,7 @@ STokenizer& operator>>(STokenizer &s, Token &t) {
     if (s.get_token(START_DOUBLE, token)) {
         t = Token(token, DIGIT);
     } else if (s.get_token(START_ALPHA, token)) {
-        t = Token(token, ALPHA);
+        t = Token(token, WORD);
     } else if (s.get_token(START_SPACES, token)) {
         t = Token(token, SPACE);
     } else if (s.get_token(START_OPERATORS, token)) {
@@ -55,9 +55,9 @@ void STokenizer::make_table(int _table[][MAX_COLUMNS]) {
     mark_cells(1, _table, '.', '.', 2);
 
     // Creates states for strings
-    mark_cells(4, _table, LETTERS, 5);
+    mark_cells(4, _table, ALPHA, 5);
     mark_cell(4, _table, 39, 5);
-    mark_cells(5, _table, LETTERS, 5);
+    mark_cells(5, _table, ALPHA, 5);
     mark_cells(5, _table, DIGITS, 5);
 
     // Creates states for spaces
@@ -160,17 +160,16 @@ bool STokenizer::get_token(int start_state, string &token) {
     int i_pos = _pos;
     int l_pos = _pos;
     int l_state = -1;
-
     while ((state != -1) && (_buffer[_pos] != '\0')) {
-        if (_buffer[_pos] < 0) {
-            token = " ";
+        state = _table[state][int(_buffer[_pos])];
+        if (state > MAX_ROWS) {
             break;
         }
-        state = _table[state][int(_buffer[_pos])];
         if (_table[state][0] == 1) {
             l_state = state;
             l_pos = _pos;
         }
+
         ++_pos;
     }
 

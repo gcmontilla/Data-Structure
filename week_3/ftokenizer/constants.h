@@ -13,7 +13,7 @@ static const int MAX_COLUMNS = 500;
 static const int MAX_BUFFER = 1000;
 
 const char ASCII[] = " !#$%'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
-const char LETTERS[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+const char ALPHA[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 const char DIGITS[] = "0123456789";
 const char OPERATORS[] = "><=!?-%&|,.";
 const char SPACES[] = {' ', '\t', '\n', '\0'};
@@ -26,7 +26,7 @@ const int START_UNKNOWN = 10;
 
 const int UNKNOWN = -1;
 const int DIGIT = 0;
-const int ALPHA = 1;
+const int WORD = 1;
 const int SPACE = 2;
 const int PUNCTUATION = 3;
 #endif //TOKENIZER_CONSTANTS_H

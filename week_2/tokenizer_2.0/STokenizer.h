@@ -43,6 +43,7 @@ private:
     void mark_cells(int row, int table[][MAX_COLUMNS], const char columns[], int state);
     void mark_cell(int row, int table[][MAX_COLUMNS], int column, int state);
     void mark_table();
+
 };
 
 

@@ -4,64 +4,77 @@
 
 #include "FTokenizer.h"
 
-/// Constructs FTokenizer object
-/// \param file File needed to be opened
-FTokenizer::FTokenizer(const char *file) {
-    _f.open(file);  // Opens file
-    _more = true;   // Sets more to true
+FTokenizer::FTokenizer(char *file) {
+    _blockPos = 0;
+    _f.open(file);
+    _more = true;
 
-    // Checks for failure to open file
     if (_f.fail()) {
         cout << "FAILURE" << endl;
     }
+
+    get_new_block();
+
+//    if (debug) {
+//        cout << "CONSTRUCTOR -> NEW BLOCK" << endl;
+//    }
 }
 
-/// Grabs token from file
-/// \param f File Tokenizer object
-/// \param t Token object
-/// \return Next token from file
 FTokenizer& operator>>(FTokenizer& f, Token& t) {
-    // Checks if tokenizer is done, gets new block from file
-    if (f._stk.done()) {
-        f.get_new_block();
-    }
 
-    t = f.next_token();     // Sets token to next token
+    if (f._more) {
+        if (!f._stk.done()) {
+            t = f.next_token();
 
-    // Check for end of file and if tokenizer is done
-    if ((f._f.eof()) && (f._stk.done())) {
-        f._more = false;
-        f._f.close();
+//            if (debug) {
+//                cout << t.token_str() << endl;
+//            }
+
+        } else {
+            f.get_new_block();
+            t = f.next_token();
+
+//            if (debug) {
+//                cout << t.token_str() << endl;
+//            }
+        }
     }
 
     return f;
 }
 
-/// Gets next token
-/// \return Next token
 Token FTokenizer::next_token() {
-    // Grabs the next token
     Token t;
+
     _stk >> t;
+
     return t;
 }
 
-/// Gets new block from file and sets it for string tokenizer
-/// \return True if gets new block, false if else
 bool FTokenizer::get_new_block() {
-    // Checks if there is more in the file
     if (_more) {
-        // Reads new block from file and sets string for tokenizer
-        _f.read(_block, MAX_BUFFER - 1);
+        _f.read(_block, MAX_BLOCK-1);
         _block[_f.gcount()] = NULL;
+
+        if (debug) {
+            cout << "GET NEW BLOCK" << endl;
+//            cout << _block << endl;
+        }
+
+        if (_f.gcount() < MAX_BLOCK-1) {
+            _more = false;
+        }
+
         _stk.set_string(_block);
         return true;
     }
     return false;
 }
 
-/// Returns value of more
-/// \return True if there is more to file, false if else
 bool FTokenizer::more() {
     return _more;
+}
+
+int FTokenizer::block_pos() {
+    return _blockPos;
 }
